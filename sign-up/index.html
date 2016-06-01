@@ -7,30 +7,33 @@
 	<link rel="stylesheet" href="../forms.css">
 </head>
 <body>
-	<div class="wrapper">
-		<form action="/form_handler_file" method="post">
+	<div class="form-wrap">
+		<form action="/form_handler_file" method="post" id="sign_up_form">
+		<div class="input-wrap">
+			<h1>Sign me up, Scotty!</h1>		
 			<div>
 				<label for="first_name">First name:</label>
-				<input type="text" id="first_name">
+				<input type="text" id="first_name" placeholder="James">
 			</div>
 			<div>
 				<label for="last_name">Last name:</label>
-				<input type="text" id="last_name">
+				<input type="text" id="last_name" placeholder="Kirk">
 			</div>
 			<div>
 				<label for="email">Email:</label>
-				<input type="email" id="email">
+				<input type="email" id="email" placeholder="JTKirk@starfleet.com">
 			</div>
 			<div>
 				<label for="date_of_birth">Date of birth:</label>
-				<input type="date" id="date_of_birth">
+				<input type="text" id="date_of_birth" placeholder="mm/dd/yyyy">
 			</div>
 			<div>
 				<label for="password">Password:</label>
-				<input type="password" id="password">
+				<input type="password" id="password" placeholder="Please enter a unique password">
 			</div>
-			<div>
+			<div class="align-right">
 				<button type="submit" class="button">Submit</button>
+			</div>
 			</div>
 		</form>	
 	</div>
