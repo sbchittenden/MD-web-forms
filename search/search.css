@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,300);
+
+body {
+	font-size: 16px;
+	font-family: 'Ubuntu', 'Helvetica', 'Arial', sans-serif;
+	box-sizing: border-box;
+}
+
+input, select {
+	margin: 0.25em 0em 0.75em 0em;
+	padding-left: 0.4em;
+	display: block;
+	height: 2em;
+	font-weight: 300;
+	width: 100%;
+	color: #353535;
+	border: solid 1px #d8d8d6;
+	border-radius: 2px;
+	box-sizing: border-box;
+}
+
+input:focus {
+	font-weight: 400;
+	outline-style: none;
+	border-bottom: solid 2px #65C6BB;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	/*border-radius: 0px;*/
+	color: #1E1E1E;
+}
+
+select:focus {
+    outline: none;
+}
+
+select:focus option {
+    background-color: #65C6BB;
+}
+
+form {
+	border-radius: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 1.75em;
+	margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.form-wrap {
+	border: solid 1px #CCCBC9;
+	background-color: #F2F1EF;
+    background: repeat url(squiggle_guy.png);
+	width: 50%;
+	margin: auto;
+	border-radius: 5px;
+}
+
+.input-wrap {
+	padding: 1em;
+	margin: 1em;
+}
+
+.first-input {
+    clear: both;
+}
+
+.align-right {
+	text-align: right;
+}
+#hand {
+    float: left;
+    margin-right: 0.25em;
+}
+
+/* ------------------------------------
+Button styling
+--------------------------------------- */
+.button:focus {
+  outline: none;
+}
+
+.button {
+  /*font-family: 'Droid Sans', 'Helvetica', 'Arial', sans-serif;*/
+  vertical-align: bottom;
+  display: inline-block;
+  color: white;
+  font-size: 1em;
+  background-color: #65C6BB;
+  text-align: center;
+  padding: 0.667em 1.5em 0.667em 1.5em;
+  border-top: solid 1px #58aaa1;
+  border-right: solid 1px #58aaa1;
+  border-bottom: solid 2px #58aaa1;
+  border-left: solid 1px #58aaa1;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.button:hover {
+  opacity: 0.8; 
+}
+
+.button:active {
+  opacity: 1;
+  background-color: #5cb2a8;
+  border-top: solid 2px #4f9990;
+  border-right: solid 1px #4f9990;
+  border-bottom: solid 1px #58aaa1;
+  border-left: solid 1px #4f9990;
+}
