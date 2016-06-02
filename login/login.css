@@ -6,6 +6,8 @@ body {
 	font-family: 'Lobster', 'Helvetica', 'Arial', sans-serif;
 	box-sizing: border-box;
 	color: #992929;
+	background-image: url('bacon.jpg');
+	background-size: cover;
 }
 
 input, select {
