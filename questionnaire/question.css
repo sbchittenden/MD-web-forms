@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,300);
+
+body {
+	font-size: 16px;
+	font-family: 'Ubuntu', 'Helvetica', 'Arial', sans-serif;
+	box-sizing: border-box;
+	color: #f9f9f9;
+}
+
+input {
+	margin: 0.25em 0em 0.75em 0em;
+	padding-left: 0.4em;
+	height: 2em;
+	font-weight: 300;
+}
+
+form {
+	border-radius: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 1.75em;
+	margin-top: 0;
+}
+
+.form-wrap {
+	border: solid 1px #CCCBC9;
+	background-color: #F2F1EF;
+	background: repeat url('denim.png');
+	width: 50%;
+	margin: auto;
+	border-radius: 5px;
+}
+
+.input-wrap {
+	padding: 1em;
+	margin: 1em;
+}
+
+.align-right {
+	text-align: right;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.no-bullet li input {
+	margin: 0;
+	height: 1.8em;
+}
+
+ul.no-bullet li label {
+	margin-top: 0;
+	vertical-align: super;
+  height: 2em;
+  padding-left: 0.5em;
+}
+
+textarea {
+	width: 100%;
+	height: 5em;
+	padding: 0.4em;
+	font-weight: 300;
+	border: solid 1px #d8d8d6;
+	border-radius: 5px;
+	margin-top: 0.5em;
+	box-sizing: border-box;
+}
+
+textarea:focus {
+	font-weight: 400;
+	outline-style: none;
+	border-bottom: solid 2px #d32ecb;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	/*border-radius: 0px;*/
+	color: #1E1E1E;
+}
+
+.first-input {
+    clear: both;
+}
+
+.align-right {
+	text-align: right;
+}
+
+#spaceship {
+	float: left;
+	margin-right: 0.25em;
+	margin-top: 0.2em;
+	margin-bottom: 0.15em;
+}
+
+/* ------------------------------------
+Button styling
+--------------------------------------- */
+.button:focus {
+  outline: none;
+}
+
+.button {
+  font-family: 'Droid Sans', 'Helvetica', 'Arial', sans-serif;
+  vertical-align: bottom;
+  display: inline-block;
+  color: white;
+  font-size: 1em;
+  background-color: #d32ecb;
+  text-align: center;
+  padding: 0.667em 1.5em 0.667em 1.5em;
+  border-top: solid 1px #b227ab;
+  border-right: solid 1px #b227ab;
+  border-bottom: solid 2px #b227ab;
+  border-left: solid 1px #b227ab;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.button:hover {
+  background-color: #e047d8; 
+}
+
+.button:active {
+  opacity: 1;
+  background-color: #b227ab;
+  border-top: solid 2px #93208c;
+  border-right: solid 1px #93208c;
+  border-bottom: solid 1px #b227ab;
+  border-left: solid 1px #93208c;
+}

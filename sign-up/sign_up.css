@@ -15,7 +15,7 @@ input {
 	width: 100%;
 	color: #353535;
 	border: solid 1px #d8d8d6;
-	border-radius: 2px;
+	border-radius: 5px;
 	box-sizing: border-box;
 }
 
@@ -44,6 +44,7 @@ h1 {
 .form-wrap {
 	border: solid 1px #CCCBC9;
 	background-color: #F2F1EF;
+	background: url('light_wool.png') repeat;
 	width: 50%;
 	margin: auto;
 	border-radius: 5px;

@@ -6,29 +6,50 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="question.css">
 
 </head>
 <body>
   <div class="form-wrap">
     <form action="" method="post" id="search_form">
       <div class="input-wrap">
-      <i class="fa fa-hand-paper-o fa-4x" aria-hidden="true" id="hand"></i><h1>Are these the lifeforms you're looking for?</h1>
+      <i class="fa fa-space-shuttle fa-4x fa-rotate-270" aria-hidden="true" id="spaceship"></i><h1>If you could only have one spaceship for the rest of your life, which would it be?</h1>
       <div class="first-input">
-        <label for="Xynot-345">Xynot-345</label>
-        <input type="radio" value="Xynot-345" name="spaceships">
-        <label for="Commodore S86">Commodore S86</label>
-        <input type="radio" value="Commodore S86" name="spaceships">
-        <label for="902 Zarathustra">902 Zarathustra</label>
-        <input type="radio" value="902 Zarathustra" name="spaceships">
-
+        <ul class="no-bullet">
+          <li>
+            <input type="radio" value="Millennium_Falcon" name="spaceships">
+            <label for="Millennium_Falcon">The Millennium Falcon</label>
+          </li>
+          <li>
+            <input type="radio" value="USS_Enterprise" name="spaceships">
+            <label for="USS_Enterprise">The USS Enterprise</label>
+          </li>
+          <li>            
+            <input type="radio" value="X_Wing_Fighter" name="spaceships">
+            <label for="X_Wing_Fighter">An X-Wing Fighter</label>
+          </li>
+          <li>
+            <input type="radio" value="Firefly_Class" name="spaceships">
+            <label for="Firefly_Class">A Firefly Class Transport</label>
+          </li>
+          <li>
+            <input type="radio" value="Viper" name="spaceships">
+            <label for="Viper">A Viper Mark VII</label>
+          </li>
+          <li>
+            <input type="radio" value="Other" name="spaceships">
+            <label for="Other">None of these! <em>This</em> is the mac daddy of spaceships:</label>
+            
+          </li>
+          <textarea name="other" id="other"></textarea>
+        </ul>
       </div>
 
       <div>
         
       </div>
-      <div>
-        <button class="button" type="submit">Search</button>
+      <div class="align-right">
+        <button class="button" type="submit">Commit</button>
       </div>
 
       </div>
