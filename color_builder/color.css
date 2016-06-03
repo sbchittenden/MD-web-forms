@@ -13,7 +13,26 @@ body {
 h1 {
 	font-size: 4em;
 	color: #ffe100;
-	text-shadow: -4px 4px black, -3px -2px black, 1px -3px black, -3px 4px black, -6px 6px white, 3px -4px white;
+	text-shadow: -3px -2px black, 
+                -2px -2px black, 
+                5px 6px black, 
+                4px 6px black, 
+                4px -3px black, 
+                7px 5px black, 
+                -3px 2px black;
+}
+
+h2 {
+    font-size: 3.5em;
+    color: #ffe100;
+    text-shadow: -3px -2px black, 
+                -2px -2px black, 
+                5px 6px black, 
+                4px 6px black, 
+                4px -3px black, 
+                7px 5px black, 
+                -3px 2px black;
+    transform: rotate(-5deg);
 }
 
 input {
@@ -31,6 +50,7 @@ form {
 	border-radius: 5px;
 	margin: 0;
 	padding: 0;
+    position: relative;
 }
 
 textarea {
@@ -47,16 +67,17 @@ textarea {
 	border: solid 1px #CCCBC9;
 	background-color: #f2f2f2;
 	background: repeat url(worn_dots.png);
-	width: 50%;
+	width: 525px;
 	margin: 5% auto;
 	border-radius: 5px;
-	min-width: 350px;
-	max-width: 650px;
+	/*min-width: 525px;
+	max-width: 600px;*/
 }
 
 .input-wrap {
 	padding: 1em;
 	margin: 1em;
+    clear: both;
 }
 
 .slider-wrap {
@@ -97,12 +118,16 @@ textarea {
 	text-align: right;
 }
 
+/* ----------- 
+orange explosion
+-------------*/
+
 #pow {
 	width: 0;
 	height: 0;
 	border-left: 70px solid transparent;
 	border-right: 60px solid transparent;
-	border-bottom: 100px solid #d11919;
+	border-bottom: 100px solid #bf3333;
 	position: relative;
 	margin: 1em;
 
@@ -112,7 +137,7 @@ textarea {
 	height: 0;
 	border-left: 25px solid transparent;
 	border-right: 105px solid transparent;
-	border-top: 50px solid #d11919;
+	border-top: 50px solid #bf3333;
 	position: absolute;
 	content: "";
 	top: 30px;
@@ -124,7 +149,7 @@ textarea {
 	height: 0;
 	border-left: 50px solid transparent;
 	border-right: 90px solid transparent;
-	border-top: 100px solid #d11919;
+	border-top: 100px solid #bf3333;
 	position: absolute;
 	content: "";
 	top: 30px;
@@ -138,6 +163,14 @@ textarea {
 	left: -2.9375em;
 	z-index: 1000;
 	transform: rotate(-5deg);
+}
+
+
+
+#color-builder {
+    position: absolute;
+    top: 0;
+    right: 6%;
 }
 
 /* ------------------------------------
