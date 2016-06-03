@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MD Color Builder Form</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="color.css">
+
+</head>
+<body>
+  <div class="form-wrap">
+    <form action="" method="post" id="search_form">
+    <div id="pow">
+      <div><h1>POW!</h1></div>
+    </div>
+    <div class="input-wrap">
+      <div class="slider-wrap">
+      <div>
+        <label for="red">Red</label>
+        <input id="red" name="red" type="range" min="0" max="255" step="5">
+        <div class="range-numbers">
+          <div class="fl-lft width-50">0</div>
+          <div class="fl-rt width-50 text-right">255</div>
+        </div>
+      </div>
+      <div>
+        <label for="green">Green</label>
+        <input id="green" name="green" type="range" min="0" max="255" step="5">
+        <div class="range-numbers">
+          <div class="fl-lft width-50">0</div>
+          <div class="fl-rt width-50 text-right">255</div>
+        </div>
+      </div>
+      <div>
+        <label for="blue">Blue</label>
+        <input id="blue" name="blue" type="range" min="0" max="255" step="5">
+        <div class="range-numbers">
+          <div class="fl-lft width-50">0</div>
+          <div class="fl-rt width-50 text-right">255</div>
+        </div>
+      </div>
+      <div>
+        <label for="alpha">Alpha</label>
+        <input id="alpha" name="alpha" type="range" min="0" max="255" step="5">
+        <div class="range-numbers">
+          <div class="fl-lft width-50">0</div>
+          <div class="fl-rt width-50 text-right">255</div>
+        </div>
+      </div>
+      </div>
+      <div class="color-window-wrap">
+        <textarea name="color-window" id="color-window" rows="12" cols="10"></textarea>
+      </div>
+      <div>
+        <button class="button" type="submit">Log in</button>
+      </div>  
+    
+    </div>
+    </form>
+    
+  </div>
+</body>
+</html>

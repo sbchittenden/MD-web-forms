@@ -87,6 +87,8 @@ label[for="remember"] {
 	width: 50%;
 	margin: 5% auto;
 	border-radius: 5px;
+	min-width: 350px;
+	max-width: 650px;
 }
 
 .input-wrap {
@@ -100,10 +102,6 @@ label[for="remember"] {
 
 .align-right {
 	text-align: right;
-}
-#hand {
-    float: left;
-    margin-right: 0.25em;
 }
 
 #forgot {
