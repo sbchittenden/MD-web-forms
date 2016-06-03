@@ -13,7 +13,7 @@ body {
 h1 {
 	font-size: 4em;
 	color: #ffe100;
-	text-shadow: -4px 4px black, -3px -2px black, 1px -3px black, -3px 4px black, -6px 6px white, 6px -6px white;
+	text-shadow: -4px 4px black, -3px -2px black, 1px -3px black, -3px 4px black, -6px 6px white, 3px -4px white;
 }
 
 input {
@@ -46,6 +46,7 @@ textarea {
 .form-wrap {
 	border: solid 1px #CCCBC9;
 	background-color: #f2f2f2;
+	background: repeat url(worn_dots.png);
 	width: 50%;
 	margin: 5% auto;
 	border-radius: 5px;
