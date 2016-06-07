@@ -80,7 +80,7 @@ h2 {
 
 .input-group label {
     margin-right: 0.4em;
-    margin-left: 0.4em;
+    margin-left: 0.45em;
 }
 
 .input-group input {
@@ -100,8 +100,19 @@ h2 {
 } 
 
 #ship_state, #bill_state {
-    width: 12%;
+    width: 14%;
 } 
+
+select {
+  outline: none;
+  height: 2em;
+  border-radius: 3px;
+  padding-left: 0.4em;
+  border: solid 1px #cccbc9;
+  background-color: #fcf6ea;
+  outline: none;
+  color: #4c311a;
+}
 
 #same_as {
     margin-bottom: 1em;
