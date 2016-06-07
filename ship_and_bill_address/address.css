@@ -114,6 +114,10 @@ select {
   color: #4c311a;
 }
 
+select:focus, input:focus {
+  border: dashed 1px #4c311a;
+}
+
 #same_as {
     margin-bottom: 1em;
     margin-right: 0.4em;
