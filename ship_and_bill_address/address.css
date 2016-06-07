@@ -1,21 +1,71 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Courgette);
 
 body {
     font-size: 16px;
-    font-family: 'Ubuntu', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Courgette', 'Helvetica', 'Arial', sans-serif;
     box-sizing: border-box;
+    color: #fcf1db;
+    background-color: #4c311a;
+    background-image: url(breakfast_bg.png);
+    background-repeat: repeat;
 }
 
 h1 {
     margin-bottom: 0.4em;
 }
 
+h2 {
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+}
+
+#logo-title {
+    text-align: center;
+}
+
+#logo-title h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+#logo-title h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#sally-smith:before {
+    content: '';
+    width: 162px;
+    height: 162px;
+    border: dashed 2px #fcf6ea;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    border-radius: 50%;
+}
+
+#sally-smith {
+    background-image: url(sally_smith.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fcf6ea;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: solid 8px #764C29;
+    position: absolute;
+    top: -70px;
+    left: -74px;
+    transform: rotate(-5deg);
+}
+
 .form-wrap {
-    border: solid 1px #CCCBC9;
-    background-color: #F2F1EF;
+    border: dashed 2px #fcf6ea;
+    background-color: #764C29;
     width: 550px;
-    margin: 5% auto;
+    margin: 7% auto;
     border-radius: 5px;
+    position: relative;
 }
 
 .input-wrap {
@@ -30,6 +80,7 @@ h1 {
 
 .input-group label {
     margin-right: 0.4em;
+    margin-left: 0.4em;
 }
 
 .input-group input {
@@ -39,9 +90,23 @@ h1 {
     border-radius: 3px;
     padding-left: 0.4em;
     border: solid 1px #cccbc9;
+    background-color: #fcf6ea;
+    outline: none;
+    color: #4c311a;
+}
+
+#ship_city, #bill_city {
+    width: 45%;
+} 
+
+#ship_state, #bill_state {
+    width: 12%;
+} 
+
+#same_as {
+    margin-bottom: 1em;
 }
 
 label[for="same_as"] {
     font-size: 0.8em;
-    margin-bottom: 0.4em;
 }

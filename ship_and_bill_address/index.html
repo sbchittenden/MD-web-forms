@@ -12,20 +12,23 @@
 <body>
 
 <div class="form-wrap">
-<div id="sally_smith">
-  <img src="SallySmith.png" alt="">
-</div>
+<div id="sally-smith"></div>
     <form action="" method="post" id="search_form">
       <div class="input-wrap">
-      <h1>Shipping Address</h1>
+      <div id="logo-title">
+        <h1>Sally Smith's</h1>
+        <h2 class="subheader">Breakfast-To-Go!</h2>
+      </div>
+      
+      <h2>Shipping Address</h2>
       <div id="shipping">
         <div class="input-group">
-          <label for="first_name" class="label">First Name:</label>
-          <input type="text" id="first_name" class="input">
+          <label for="ship_first_name" class="label">First Name:</label>
+          <input type="text" id="ship_first_name" class="input">
         </div> 
         <div class="input-group">       
-          <label for="last_name" class="label">Last Name:</label>
-          <input type="text" id="last_name" class="input">
+          <label for="ship_last_name" class="label">Last Name:</label>
+          <input type="text" id="ship_last_name" class="input">
         </div>
         <div class="input-group">
           <label for="ship_address" class="label">Address line 1:</label>
@@ -36,42 +39,46 @@
           <input type="text" id="ship_address_2" class="input">
         </div>
         <div class="input-group">
-          <label for="city" class="label">City:</label>
+          <label for="ship_city" class="label">City:</label>
           <input type="text" id="ship_city" class="input">
+          <label for="ship_state" class="label">State:</label>
+          <input type="text" id="ship_state" class="input">
         </div>
         <div class="input-group">
           <label for="ship_country" class="label">Country</label>
           <input type="text" id="ship_country" class="input">
         </div>
       </div>
-      <h1>Billing Address</h1>
+      <h2>Billing Address</h2>
       <input type="checkbox" class="input" id="same_as">
       <label for="same_as" class="label">My billing address is the same as my shipping address</label>
       
       <div id="billing">   
         <div class="input-group">
-          <label for="first_name" class="label">First Name:</label>
-          <input type="text" id="first_name" class="input">
+          <label for="bill_first_name" class="label">First Name:</label>
+          <input type="text" id="bill_first_name" class="input">
         </div> 
         <div class="input-group">       
-          <label for="last_name" class="label">Last Name:</label>
-          <input type="text" id="last_name" class="input">
+          <label for="bill_last_name" class="label">Last Name:</label>
+          <input type="text" id="bill_last_name" class="input">
         </div>
         <div class="input-group">
-          <label for="ship_address" class="label">Address line 1:</label>
-          <input type="text" id="ship_address" class="input">
+          <label for="bill_address" class="label">Address line 1:</label>
+          <input type="text" id="bill_address" class="input">
         </div>
         <div class="input-group">
-          <label for="ship_address_2" class="label">Address line 2:</label>
-          <input type="text" id="ship_address_2" class="input">
+          <label for="bill_address_2" class="label">Address line 2:</label>
+          <input type="text" id="bill_address_2" class="input">
         </div>
         <div class="input-group">
-          <label for="city" class="label">City:</label>
-          <input type="text" id="ship_city" class="input">
+          <label for="bill_city" class="label">City:</label>
+          <input type="text" id="bill_city" class="input">
+          <label for="bill_state" class="label">State:</label>
+          <input type="text" id="bill_state" class="input">
         </div>
         <div class="input-group">
-          <label for="ship_country" class="label">Country</label>
-          <input type="text" id="ship_country" class="input">
+          <label for="bill_country" class="label">Country</label>
+          <input type="text" id="bill_country" class="input">
         </div>
       </div>
 
