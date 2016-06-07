@@ -6,6 +6,10 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    margin-bottom: 0.4em;
+}
+
 .form-wrap {
     border: solid 1px #CCCBC9;
     background-color: #F2F1EF;
@@ -31,4 +35,13 @@ body {
 .input-group input {
     width: 72%;
     text-align: left;
+    height: 1.75em;
+    border-radius: 3px;
+    padding-left: 0.4em;
+    border: solid 1px #cccbc9;
+}
+
+label[for="same_as"] {
+    font-size: 0.8em;
+    margin-bottom: 0.4em;
 }
