@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+body {
+    font-size: 16px;
+    font-family: 'Oswald', 'Helvetica', 'Arial', sans-serif;
+    box-sizing: border-box;
+    color: black;
+    background-color: white;
+}
+
+.form-wrap {
+    border: solid 1px black;
+    background-color: grey;
+    width: 550px;
+    margin: 100px auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-wrap {
+    padding: 1em;
+    margin: 1em;
+}
+
+.input-group {
+    margin-top: 0.4em;
+    text-align: right;
+}
+
+.input-group label {
+    margin-right: 0.4em;
+    margin-left: 0.45em;
+}
+
+.input-group input, .input-group textarea {
+    width: 72%;
+    text-align: left;
+    height: 1.75em;
+    border-radius: 3px;
+    padding-left: 0.4em;
+    border: solid 1px #cccbc9;
+    outline: none;
+    color: #4c311a;
+}
