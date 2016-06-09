@@ -11,8 +11,8 @@ body {
 .form-wrap {
     border: solid 1px black;
     background-color: grey;
-    width: 550px;
-    margin: 100px auto;
+    width: 34.375em;
+    margin: 2em auto;
     border-radius: 5px;
     position: relative;
 }
@@ -25,20 +25,72 @@ body {
 .input-group {
     margin-top: 0.4em;
     text-align: right;
+    vertical-align: middle;
 }
 
 .input-group label {
-    margin-right: 0.4em;
-    margin-left: 0.45em;
+    margin: 0em 0.4em 0em 0.45em;
+    vertical-align: top;
 }
 
-.input-group input, .input-group textarea {
+.input-group input, .input-group textarea, .input-group select {
     width: 72%;
     text-align: left;
     height: 1.75em;
-    border-radius: 3px;
+    border-radius: 5px;
     padding-left: 0.4em;
     border: solid 1px #cccbc9;
     outline: none;
-    color: #4c311a;
+    color: grey;
+}
+
+.input-group select  {
+    width: 73.79%;
+}
+
+.input-group textarea {
+    height: 3em;
+}
+
+input[placeholder="mm/dd/yyy"] {
+    color: grey;
+}
+
+/* ------------------------------------
+Button styling
+--------------------------------------- */
+.button:focus {
+  outline: none;
+}
+
+.button {
+  /*font-family: 'Droid Sans', 'Helvetica', 'Arial', sans-serif;*/
+  vertical-align: bottom;
+  display: inline-block;
+  color: white;
+  font-size: 1.75em;
+  background-color: #bf3333;
+  text-align: center;
+  padding: 0.3em 1.5em 0.3em 1.5em;
+  border-top: solid 1px #992929;
+  border-right: solid 1px #992929;
+  border-bottom: solid 2px #992929;
+  border-left: solid 1px #992929;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+.button:hover {
+  opacity: 0.8; 
+}
+
+.button:active {
+  opacity: 1;
+  background-color: #992929;
+  border-top: solid 2px #751f1f;
+  border-right: solid 1px #751f1f;
+  border-bottom: solid 1px #bf3333;
+  border-left: solid 1px #751f1f;
 }
