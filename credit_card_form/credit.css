@@ -96,9 +96,9 @@ body {
 }
 
 
-#csv-q {
+#cvc-q {
   position: absolute;
-  bottom: 22em;
+  bottom: 22.3em;
   left: -9em;
   font-size: 0.5em;
   background-color: #e2f2e1;
@@ -106,9 +106,28 @@ body {
   border-radius: 3px;
   padding: 1em;
   opacity: 0;
+  width: 27em;
+  text-align: left;
 }
 
-#csv:focus + span#csv-q {
+#cvc-q:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 10px solid #e2f2e1;
+  opacity: 1;
+  position: relative;
+  bottom: -28px;
+  left: -38px;
+}
+
+#cvc-label:hover {
+  cursor: help;
+}
+
+#cvc-label:hover > span#cvc-q {
   opacity: 1;
 }
 
