@@ -108,6 +108,7 @@ body {
   opacity: 0;
   width: 27em;
   text-align: left;
+  transition-duration: 0.5s;
 }
 
 #cvc-q:after {
