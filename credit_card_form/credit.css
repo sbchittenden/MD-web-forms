@@ -94,6 +94,24 @@ body {
 .txt-right {
   text-align: right;
 }
+
+
+#csv-q {
+  position: absolute;
+  bottom: 22em;
+  left: -9em;
+  font-size: 0.5em;
+  background-color: #e2f2e1;
+  color: #4d604d;
+  border-radius: 3px;
+  padding: 1em;
+  opacity: 0;
+}
+
+#csv:focus + span#csv-q {
+  opacity: 1;
+}
+
 /* ------------------------------------
 Button styling
 --------------------------------------- */
