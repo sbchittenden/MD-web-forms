@@ -4,13 +4,12 @@ body {
     font-size: 16px;
     font-family: 'Oswald', 'Helvetica', 'Arial', sans-serif;
     box-sizing: border-box;
-    color: black;
-    background-color: white;
+    color: #F39C12;
+    background-color: #1e1e1e;
 }
 
 .form-wrap {
-    border: solid 1px black;
-    background-color: grey;
+    border: solid 1px #E4F1FE;
     width: 34.375em;
     margin: 2em auto;
     border-radius: 5px;
@@ -39,9 +38,10 @@ body {
     height: 1.75em;
     border-radius: 5px;
     padding-left: 0.4em;
-    border: solid 1px #cccbc9;
+    border: solid 1px #E4F1FE;
     outline: none;
-    color: grey;
+    color: #F39C12;
+    background-color: rgba(30, 30, 30, 0);
 }
 
 .input-group select  {
@@ -67,15 +67,15 @@ Button styling
   /*font-family: 'Droid Sans', 'Helvetica', 'Arial', sans-serif;*/
   vertical-align: bottom;
   display: inline-block;
-  color: white;
+  color: #F39C12;
   font-size: 1.75em;
-  background-color: #bf3333;
+  background-color: rgba(30, 30, 30, 0);
   text-align: center;
   padding: 0.3em 1.5em 0.3em 1.5em;
-  border-top: solid 1px #992929;
-  border-right: solid 1px #992929;
-  border-bottom: solid 2px #992929;
-  border-left: solid 1px #992929;
+  border-top: solid 1px #E4F1FE;
+  border-right: solid 1px #E4F1FE;
+  border-bottom: solid 2px #E4F1FE;
+  border-left: solid 1px #E4F1FE;
   border-radius: 3px;
   cursor: pointer;
   margin-top: 0.5em;
@@ -88,9 +88,10 @@ Button styling
 
 .button:active {
   opacity: 1;
-  background-color: #992929;
-  border-top: solid 2px #751f1f;
-  border-right: solid 1px #751f1f;
-  border-bottom: solid 1px #bf3333;
-  border-left: solid 1px #751f1f;
+  color: #1e1e1e;
+  background-color: #E4F1FE;
+  border-top: solid 2px #1e1e1e;
+  border-right: solid 1px #1e1e1e;
+  border-bottom: solid 1px #1e1e1e;
+  border-left: solid 1px #1e1e1e;
 }
