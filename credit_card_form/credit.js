@@ -10,7 +10,7 @@ var fullName = document.getElementById('full_name');
 var creditCardNumber = document.getElementById('cc_number');
 var cvcCode = document.getElementById('cvc');
 var expMonth = document.getElementById('expiration_month');
-var expYear = documen.getElementById('expiry_year');
+var expYear = document.getElementById('expiry_year');
 
 // add event listener for ccForm submission
 ccForm.addEventListener('submit', function(event) {
