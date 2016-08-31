@@ -4,14 +4,13 @@
 
 // retrieve the form element
 var searchForm = document.getElementById('search_form');
+// retrieve search input element
+var searchInput = document.getElementById('search');
 
 searchForm.addEventListener('submit', function(event) {
 
     // stop the event from its default action: submitting the form (for our validation, submission is not desired)
     event.preventDefault();
-
-    // retrieve search input element
-    var searchInput = document.getElementById('search');
 
     // search element shouldn't be empty
     if (validator.isEmpty(searchInput.value)) {
@@ -26,7 +25,7 @@ searchForm.addEventListener('submit', function(event) {
 });
 
 // add eventListener for form focus and add valid class if input validates
-searchForm.addEventListener('blur', function(event) {
+searchInput.addEventListener('blur', function(event) {
 
     if (!validator.isEmpty(this.value)) {
         searchInput.className = "valid";
