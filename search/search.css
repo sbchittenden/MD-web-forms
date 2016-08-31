@@ -81,11 +81,11 @@ h1 {
 }
 
 .invalid {
-  background-color: #ffb5b5;
+  background-color: rgba(255, 181, 181, 0.75);
 }
 
 .valid {
-  background-color: #ccffcc;
+  background-color: rgba(204, 255, 204, 0.5);
 }
 
 /* ------------------------------------
