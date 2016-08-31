@@ -132,6 +132,14 @@ body {
   opacity: 1;
 }
 
+.invalid {
+  background-color: rgba(255, 181, 181, 0.75);
+}
+
+.valid {
+  background-color: rgba(204, 255, 204, 0.5);
+}
+
 /* ------------------------------------
 Button styling
 --------------------------------------- */

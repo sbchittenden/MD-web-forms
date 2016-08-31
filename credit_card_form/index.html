@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="credit.css">
   <link rel="stylesheet" href="../../MD-Intro-to-CSS-website/back.css">
+  <!-- link to validator.js -->
+  <script type="text/javascript" src="../js/validator.js" ></script>
 </head>
 <body>
 <!-- link back to showcase website -->
@@ -16,7 +18,7 @@
   </div>
 <!-- begin form -->
 <div id="form-wrap">
-    <form action="" method="post" id="search_form">
+    <form action="" method="post" id="cc_form">
       <div id="input-wrap">
       <div id="logo"></div>
       <div class="txt-right">
@@ -37,6 +39,7 @@
       <div class="input-group">
         <label for="expiry">Expiration Date:</label>
         <select name="expiry_month" id="expiration_month">
+          <option value="month" selected>Month</option>
           <option value="jan">January</option>
           <option value="feb">February</option>
           <option value="mar">March</option>
@@ -51,6 +54,7 @@
           <option value="dec">December</option>
         </select>
         <select name="expiry_year" id="expiry_year">
+          <option value="year" selected>Year</option>
           <option value="2016">2016</option>
           <option value="2017">2017</option>
           <option value="2018">2018</option>
@@ -79,6 +83,7 @@
       </div>
     </form>
   </div>
-    
+    <!-- link to credit.js -->
+    <script type="text/javascript" src="credit.js" ></script>
 </body>
 </html>

@@ -12,31 +12,41 @@ searchForm.addEventListener('submit', function(event) {
     // stop the event from its default action: submitting the form (for our validation, submission is not desired)
     event.preventDefault();
 
+    var input = searchInput.value.trim();
+
     // search input element shouldn't be empty
-    if (validator.isEmpty(searchInput.value)) {
+    if (validator.isEmpty(input)) {
         searchInput.className = "invalid";
+    } else {
+        searchInput.className = "valid";
     }
 
     // search input element should be trimmed (no leading or trailing whitespace)
-    if (!validator.isTrimmed(searchInput.value)) {
-        searchInput.className = "invalid"
+    if (!validator.isTrimmed(input)) {
+        searchInput.className = "invalid";
+    } else {
+        searchInput.className = "valid";
     }
 
 });
 
 // add eventListener for form focus and add valid class if input validates
-searchInput.addEventListener('blur', function(event) {
+// searchInput.addEventListener('blur', function(event) {
 
-    if (!validator.isEmpty(searchInput.value)) {
-        searchInput.className = "valid";
-    } else {
-      searchInput.className = "invalid";
-    }
+//     var input = searchInput.value.trim();
 
-    if (validator.isTrimmed(searchInput.value)) {
-        searchInput.className = "valid";
-    } else {
-      searchInput.className = "invalid";
-    }
+//     // search input element shouldn't be empty
+//     if (validator.isEmpty(input)) {
+//         searchInput.className = "invalid";
+//     } else {
+//         searchInput.className = "valid";
+//     }
 
-});
+//     // search input element should be trimmed (no leading or trailing whitespace)
+//     if (!validator.isTrimmed(input)) {
+//         searchInput.className = "invalid";
+//     } else {
+//         searchInput.className = "valid";
+//     }
+
+// });
