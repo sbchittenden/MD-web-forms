@@ -12,12 +12,12 @@ searchForm.addEventListener('submit', function(event) {
     // stop the event from its default action: submitting the form (for our validation, submission is not desired)
     event.preventDefault();
 
-    // search element shouldn't be empty
+    // search input element shouldn't be empty
     if (validator.isEmpty(searchInput.value)) {
         searchInput.className = "invalid";
     }
 
-    // search element should be trimmed (no leading or trailing whitespace)
+    // search input element should be trimmed (no leading or trailing whitespace)
     if (!validator.isTrimmed(searchInput.value)) {
         searchInput.className = "invalid"
     }
@@ -27,12 +27,16 @@ searchForm.addEventListener('submit', function(event) {
 // add eventListener for form focus and add valid class if input validates
 searchInput.addEventListener('blur', function(event) {
 
-    if (!validator.isEmpty(this.value)) {
+    if (!validator.isEmpty(searchInput.value)) {
         searchInput.className = "valid";
+    } else {
+      searchInput.className = "invalid";
     }
 
-    if (validator.isTrimmed(this.value)) {
+    if (validator.isTrimmed(searchInput.value)) {
         searchInput.className = "valid";
+    } else {
+      searchInput.className = "invalid";
     }
 
 });
