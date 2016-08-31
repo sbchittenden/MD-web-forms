@@ -11,3 +11,11 @@ var creditCardNumber = document.getElementById('cc_number');
 var cvcCode = document.getElementById('cvc');
 var expMonth = document.getElementById('expiration_month');
 var expYear = documen.getElementById('expiry_year');
+
+// add event listener for ccForm submission
+ccForm.addEventListener('submit', function(event) {
+
+	// full name should not be empty
+	
+	// full name should
+});
