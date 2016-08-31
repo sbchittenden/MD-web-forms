@@ -80,6 +80,14 @@ h1 {
     margin-right: 0.25em;
 }
 
+.invalid {
+  background-color: #ffb5b5;
+}
+
+.valid {
+  background-color: #ccffcc;
+}
+
 /* ------------------------------------
 Button styling
 --------------------------------------- */
