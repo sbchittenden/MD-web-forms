@@ -17,5 +17,5 @@ ccForm.addEventListener('submit', function(event) {
 
 	// full name should not be empty
 	
-	// full name should
+	// full name should 
 });
