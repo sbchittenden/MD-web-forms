@@ -898,5 +898,7 @@
         return true;
     };
 
+// add the validator object into the global window object for easier access 
+window.validator = validator;
 
 })(window);
