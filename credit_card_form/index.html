@@ -18,7 +18,7 @@
   </div>
 <!-- begin form -->
 <div id="form-wrap">
-    <form action="" method="post" id="cc_form">
+    <form action="" method="post" novalidate id="cc_form">
       <div id="input-wrap">
       <div id="logo"></div>
       <div class="txt-right">
@@ -27,17 +27,21 @@
       <div class="input-group">
         <label for="full_name">Name on card:</label>
         <input type="text" name="full_name" id="full_name">
+        <span class="error"></span>
       </div>
       <div class="input-group">
         <label for="cc_number">Card Number:</label>
         <input type="text" name="cc_number" id="cc_number" inputmode="numeric" maxlength="19">
+        <span class="error"></span>
       </div>
       <div class="input-group">
         <label for="cvc" id="cvc-label"><i class="fa fa-question-circle-o" aria-hidden="true"></i> <span id="cvc-q">A CVC code is the 3 or 4-digit number on the back of the card. The CVC is typically the last three or four digits printed, not embossed like the card number, on the signature strip on the back of the card.</span> CVC Number: </label>
         <input type="text" name="cvc" id="cvc" inputmode="numeric">
+        <span class="error"></span>
       </div>
       <div class="input-group">
         <label for="expiry">Expiration Date:</label>
+        <span class="error"></span>
         <select name="expiry_month" id="expiration_month">
           <option value="month" selected>Month</option>
           <option value="jan">January</option>
