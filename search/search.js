@@ -12,7 +12,7 @@ searchForm.addEventListener('submit', function(event) {
     // stop the event from its default action: submitting the form (for our validation, submission is not desired)
     event.preventDefault();
 
-    var input = searchInput.value.trim();
+    var input = searchInput.value;
 
     // search input element shouldn't be empty
     if (validator.isEmpty(input)) {
