@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="login.css">
   <link rel="stylesheet" href="../../MD-Intro-to-CSS-website/back.css">
-
+<!-- link to validator.js -->
+  <script type="text/javascript" src="../js/validator.js" ></script>
 </head>
 <body>
 <!-- link back to showcase website -->
@@ -17,7 +18,7 @@
   </div>
 <!-- begin form -->
   <div class="form-wrap">
-    <form action="" method="post" id="search_form">
+    <form action="" method="post" novalidate id="login_form">
       <div class="input-wrap">
       <span class="centered-text">
         <h1><i class="fa fa-heart" aria-hidden="true"></i> Bacon Lovers Anonymous <i class="fa fa-heart" aria-hidden="true"></i></h1>
@@ -25,10 +26,12 @@
       <div class="first-input full-width-input">
         <label class="icon-label" for="username"></i> Username:</label>
         <input type="text" id="username">
+        <span class="error"></span>
       </div>
       <div class="full-width-input">
         <label for="password">Password:</label>
         <input type="password" id="password">
+        <span class="error"></span>
       </div>
       <div class="checkbox-wrap">
         <input type="checkbox" name="remember">
@@ -50,5 +53,7 @@
     </form>
     
   </div>
+  <!-- link to login.js -->
+    <script type="text/javascript" src="login.js" ></script>
 </body>
 </html>

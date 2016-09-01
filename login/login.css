@@ -122,6 +122,30 @@ label[for="remember"] {
 .centered-text {
 	text-align: center;
 }
+
+/* form validation classes */
+
+.invalid {
+    background-color: rgba(255, 181, 181, 1);
+    margin-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    border-color: rgba(234, 44, 88, 1);
+}
+
+.error {
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(234, 44, 88, 1);
+    color: white;
+    text-align: center;
+}
+
+.active {
+    padding: 0.3em;
+    display: block;
+    margin-bottom: 3px;
+}
+
+
 /* ------------------------------------
 Button styling
 --------------------------------------- */
