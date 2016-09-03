@@ -46,7 +46,7 @@
                     </div>
                     <div class="input-group">
                         <label for="ship_address_2" class="label">Address line 2:</label>
-                        <input type="text" id="ship_address_2" class="input" placeholder="Apartment No. 12">
+                        <input type="text" id="ship_address_2" class="input">
                         <span class="error"></span>
                     </div>
                     <div class="input-group">
@@ -143,7 +143,7 @@
                     <div class="input-group">
                         <label for="bill_city" class="label">City:</label>
                         <input type="text" id="bill_city" class="input">
-                        <span class="error"></span>
+                        
                         <label for="bill_state" class="label">State:</label>
                         <select id="bill_state" class="statesOption">
                             <option value="state" selected="selected">State</option>
@@ -199,9 +199,10 @@
                             <option value="WI">WI</option>
                             <option value="WY">WY</option>
                         </select>
-                        
+                        <span class="bill_city error"></span>
+                        <span class="bill_state error"></span>
                     </div>
-                    <span class="error"></span>
+                    
                     <div class="input-group">
                         <label for="bill_country" class="label">Country:</label>
                         <input type="text" id="bill_country" class="input">
