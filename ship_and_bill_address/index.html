@@ -1,207 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Shipping and Billing Address Form</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="address.css">
-  <link rel="stylesheet" href="../../MD-Intro-to-CSS-website/back.css">
-<!-- link to validator.js -->
-  <script type="text/javascript" src="../js/validator.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="address.css">
+    <link rel="stylesheet" href="../../MD-Intro-to-CSS-website/back.css">
+    <!-- link to validator.js -->
+    <script type="text/javascript" src="../js/validator.js"></script>
 </head>
+
 <body>
-<!-- link back to showcase website -->
-  <div class="back">
-    <a href="/MD-Intro-to-CSS-website/forms.html"><< Back to the Web Forms index</a>
-  </div>
-<!-- begin form -->
-<div class="form-wrap">
-<div id="sally-smith"></div>
-    <form action="" method="post" id="address_form" novalidate>
-      <div class="input-wrap">
-        <div id="logo-title">
-          <h1>Sally Smith's</h1>
-          <h2 class="subheader">Breakfast-To-Go!</h2>
-        </div>
-      
-      <h2>Shipping Address</h2>
-        <div id="shipping">
-          <div class="input-group">
-            <label for="ship_first_name" class="label">First Name:</label>
-            <input type="text" id="ship_first_name" class="input" placeholder="Ginger">
-          </div> 
-          <div class="input-group">       
-            <label for="ship_last_name" class="label">Last Name:</label>
-            <input type="text" id="ship_last_name" class="input" placeholder="Johnson">
-          </div>
-          <div class="input-group">
-            <label for="ship_address" class="label">Address line 1:</label>
-            <input type="text" id="ship_address" class="input" placeholder="123 Nostalgia Lane">
-          </div>
-          <div class="input-group">
-            <label for="ship_address_2" class="label">Address line 2:</label>
-            <input type="text" id="ship_address_2" class="input" placeholder="Apartment No. 12">
-          </div>
-          <div class="input-group">
-            <label for="ship_city" class="label">City:</label>
-            <input type="text" id="ship_city" class="input" placeholder="Pleasantville">
-            <label for="ship_state" class="label">State:</label>
-            <select id="ship_state" class="statesOption">
-              <option value="state" selected="selected">State</option>
-              <option value="AL">AL</option>
-              <option value="AK">AK</option>
-              <option value="AZ">AZ</option>
-              <option value="AR">AR</option>    
-              <option value="CA">CA</option>    
-              <option value="CO">CO</option>    
-              <option value="CT">CT</option>    
-              <option value="DE">DE</option>    
-              <option value="DC">DC</option>    
-              <option value="FL">FL</option>    
-              <option value="GA">GE</option>    
-              <option value="HI">HI</option>    
-              <option value="ID">ID</option>    
-              <option value="IL">IL</option>    
-              <option value="IN">IN</option>    
-              <option value="IA">IA</option>    
-              <option value="KS">KS</option>    
-              <option value="KY">KY</option>    
-              <option value="LA">LA</option>    
-              <option value="ME">ME</option>
-              <option value="MD">MD</option>
-              <option value="MA">MA</option>
-              <option value="MI">MI</option>
-              <option value="MN">MN</option>
-              <option value="MS">MS</option>
-              <option value="MO">MO</option>
-              <option value="MT">MT</option>
-              <option value="NE">NE</option>    
-              <option value="NV">NV</option>    
-              <option value="NH">NH</option>    
-              <option value="NJ">NJ</option>    
-              <option value="NM">NM</option>
-              <option value="NY">NY</option>    
-              <option value="NC">NC</option>
-              <option value="ND">ND</option>
-              <option value="OH">OH</option>    
-              <option value="OK">OK</option>
-              <option value="OR">OR</option>
-              <option value="PA">PA</option>
-              <option value="RI">RI</option>
-              <option value="SC">SC</option>
-              <option value="SD">SD</option>
-              <option value="TN">TN</option>
-              <option value="TX">TX</option>
-              <option value="UT">UT</option>
-              <option value="VT">VT</option>    
-              <option value="VA">VA</option>
-              <option value="WA">WA</option>    
-              <option value="WV">WV</option>    
-              <option value="WI">WI</option>
-              <option value="WY">WY</option>
-          </select>
-          </div>
-          <div class="input-group">
-            <label for="ship_country" class="label">Country:</label>
-            <input type="text" id="ship_country" class="input" placeholder="United States">
-          </div>
-        </div>
-      <h2>Billing Address</h2>
-      <input type="checkbox" class="input" id="same_as">
-      <label for="same_as" class="label">My billing address is the same as my shipping address</label>
-      
-        <div id="billing">   
-          <div class="input-group">
-            <label for="bill_first_name" class="label">First Name:</label>
-            <input type="text" id="bill_first_name" class="input">
-          </div> 
-          <div class="input-group">       
-            <label for="bill_last_name" class="label">Last Name:</label>
-            <input type="text" id="bill_last_name" class="input">
-          </div>
-          <div class="input-group">
-            <label for="bill_address" class="label">Address line 1:</label>
-            <input type="text" id="bill_address" class="input">
-          </div>
-          <div class="input-group">
-            <label for="bill_address_2" class="label">Address line 2:</label>
-            <input type="text" id="bill_address_2" class="input">
-          </div>
-          <div class="input-group">
-            <label for="bill_city" class="label">City:</label>
-            <input type="text" id="bill_city" class="input">
-            <label for="bill_state" class="label">State:</label>
-            <select id="bill_state" class="statesOption">
-              <option value="state" selected="selected">State</option>
-              <option value="AL">AL</option>
-              <option value="AK">AK</option>
-              <option value="AZ">AZ</option>
-              <option value="AR">AR</option>    
-              <option value="CA">CA</option>    
-              <option value="CO">CO</option>    
-              <option value="CT">CT</option>    
-              <option value="DE">DE</option>    
-              <option value="DC">DC</option>    
-              <option value="FL">FL</option>    
-              <option value="GA">GE</option>    
-              <option value="HI">HI</option>    
-              <option value="ID">ID</option>    
-              <option value="IL">IL</option>    
-              <option value="IN">IN</option>    
-              <option value="IA">IA</option>    
-              <option value="KS">KS</option>    
-              <option value="KY">KY</option>    
-              <option value="LA">LA</option>    
-              <option value="ME">ME</option>
-              <option value="MD">MD</option>
-              <option value="MA">MA</option>
-              <option value="MI">MI</option>
-              <option value="MN">MN</option>
-              <option value="MS">MS</option>
-              <option value="MO">MO</option>
-              <option value="MT">MT</option>
-              <option value="NE">NE</option>    
-              <option value="NV">NV</option>    
-              <option value="NH">NH</option>    
-              <option value="NJ">NJ</option>    
-              <option value="NM">NM</option>
-              <option value="NY">NY</option>    
-              <option value="NC">NC</option>
-              <option value="ND">ND</option>
-              <option value="OH">OH</option>    
-              <option value="OK">OK</option>
-              <option value="OR">OR</option>
-              <option value="PA">PA</option>
-              <option value="RI">RI</option>
-              <option value="SC">SC</option>
-              <option value="SD">SD</option>
-              <option value="TN">TN</option>
-              <option value="TX">TX</option>
-              <option value="UT">UT</option>
-              <option value="VT">VT</option>    
-              <option value="VA">VA</option>
-              <option value="WA">WA</option>    
-              <option value="WV">WV</option>    
-              <option value="WI">WI</option>
-              <option value="WY">WY</option>
-          </select>
-          </div>
-          <div class="input-group">
-            <label for="bill_country" class="label">Country:</label>
-            <input type="text" id="bill_country" class="input">
-          </div>
-        </div>
-
-        <div id="next-button">
-          <button class="button">Continue <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-        </div>
-
-      </div>
-    </form>
-  </div>
+    <!-- link back to showcase website -->
+    <div class="back">
+        <a href="/MD-Intro-to-CSS-website/forms.html">
+            << Back to the Web Forms index</a>
+    </div>
+    <!-- begin form -->
+    <div class="form-wrap">
+        <div id="sally-smith"></div>
+        <form action="" method="post" id="address_form" novalidate>
+            <div class="input-wrap">
+                <div id="logo-title">
+                    <h1>Sally Smith's</h1>
+                    <h2 class="subheader">Breakfast-To-Go!</h2>
+                </div>
+                <h2>Shipping Address</h2>
+                <div id="shipping">
+                    <div class="input-group">
+                        <label for="ship_first_name" class="label">First Name:</label>
+                        <input type="text" id="ship_first_name" class="input" placeholder="Ginger">
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="ship_last_name" class="label">Last Name:</label>
+                        <input type="text" id="ship_last_name" class="input" placeholder="Johnson">
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="ship_address" class="label">Address line 1:</label>
+                        <input type="text" id="ship_address" class="input" placeholder="123 Nostalgia Lane">
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="ship_address_2" class="label">Address line 2:</label>
+                        <input type="text" id="ship_address_2" class="input" placeholder="Apartment No. 12">
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="ship_city" class="label">City:</label>
+                        <input type="text" id="ship_city" class="input" placeholder="Pleasantville">
+                        <label for="ship_state" class="label">State:</label>
+                        <select id="ship_state" class="statesOption">
+                            <option value="state" selected="selected">State</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GE</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                        <span class="ship_city error"></span>
+                        <span class="ship_state error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="ship_country" class="label">Country:</label>
+                        <input type="text" id="ship_country" class="input" placeholder="United States">
+                        <span class="error"></span>
+                    </div>
+                </div>
+                <h2>Billing Address</h2>
+                <input type="checkbox" class="input" id="same_as">
+                <label for="same_as" class="label">My billing address is the same as my shipping address</label>
+                <div id="billing">
+                    <div class="input-group">
+                        <label for="bill_first_name" class="label">First Name:</label>
+                        <input type="text" id="bill_first_name" class="input">
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="bill_last_name" class="label">Last Name:</label>
+                        <input type="text" id="bill_last_name" class="input">
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="bill_address" class="label">Address line 1:</label>
+                        <input type="text" id="bill_address" class="input">
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="bill_address_2" class="label">Address line 2:</label>
+                        <input type="text" id="bill_address_2" class="input">
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="bill_city" class="label">City:</label>
+                        <input type="text" id="bill_city" class="input">
+                        <span class="error"></span>
+                        <label for="bill_state" class="label">State:</label>
+                        <select id="bill_state" class="statesOption">
+                            <option value="state" selected="selected">State</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GE</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                        
+                    </div>
+                    <span class="error"></span>
+                    <div class="input-group">
+                        <label for="bill_country" class="label">Country:</label>
+                        <input type="text" id="bill_country" class="input">
+                        <span class="error"></span>
+                    </div>
+                </div>
+                <div id="next-button">
+                    <button class="button">Continue <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
     <!-- link to address.js -->
-    <script type="text/javascript" src="address.js" ></script>
+    <script type="text/javascript" src="address.js"></script>
 </body>
+
 </html>

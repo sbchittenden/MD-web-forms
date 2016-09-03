@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Courgette);
-
 body {
     font-size: 16px;
     font-family: 'Courgette', 'Helvetica', 'Arial', sans-serif;
@@ -95,27 +94,30 @@ h2 {
     color: #4c311a;
 }
 
-#ship_city, #bill_city {
+#ship_city,
+#bill_city {
     width: 45%;
-} 
-
-#ship_state, #bill_state {
-    width: 14%;
-} 
-
-select {
-  outline: none;
-  height: 2em;
-  border-radius: 3px;
-  padding-left: 0.4em;
-  border: solid 1px #cccbc9;
-  background-color: #fcf6ea;
-  outline: none;
-  color: #4c311a;
 }
 
-select:focus, input:focus {
-  border: dashed 1px #4c311a;
+#ship_state,
+#bill_state {
+    width: 14%;
+}
+
+select {
+    outline: none;
+    height: 2em;
+    border-radius: 3px;
+    padding-left: 0.4em;
+    border: solid 1px #cccbc9;
+    background-color: #fcf6ea;
+    outline: none;
+    color: #4c311a;
+}
+
+select:focus,
+input:focus {
+    border: dashed 1px #4c311a;
 }
 
 #same_as {
@@ -128,8 +130,9 @@ label[for="same_as"] {
 }
 
 #next-button {
-    text-align:right;
+    text-align: right;
 }
+
 
 /* form validation classes */
 
@@ -158,39 +161,40 @@ label[for="same_as"] {
     padding: 0.3em;
     display: block;
     margin-bottom: 3px;
-    width: 69%;
-    margin-left: 29.25%
+    width: 72%;
+    margin-left: 26.1%;
 }
 
 /* ------------------------------------
 Button styling
 --------------------------------------- */
+
 .button:focus {
-  outline: none;
+    outline: none;
 }
 
 .button {
-  vertical-align: bottom;
-  display: inline-block;
-  color: #fcf6ea;
-  font-size: 1.5em;
-  background-color: #764C29;
-  text-align: center;
-  padding: 0.3em 1.5em 0.3em 1.5em;
-  border: dashed 2px #fcf6ea;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-top: 1.2em;
-  /*width: 100%;*/
+    vertical-align: bottom;
+    display: inline-block;
+    color: #fcf6ea;
+    font-size: 1.5em;
+    background-color: #764C29;
+    text-align: center;
+    padding: 0.3em 1.5em 0.3em 1.5em;
+    border: dashed 2px #fcf6ea;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 1.2em;
+    /*width: 100%;*/
 }
 
-.button:hover { 
-  color: #4c311a;
-  background-color: #fcf6ea;
+.button:hover {
+    color: #4c311a;
+    background-color: #fcf6ea;
 }
 
 .button:active {
-  color: #fcf6ea;
-  background-color: #4c311a;
-  border: dashed 2px #fcf6ea;
+    color: #fcf6ea;
+    background-color: #4c311a;
+    border: dashed 2px #fcf6ea;
 }
