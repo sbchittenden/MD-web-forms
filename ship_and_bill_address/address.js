@@ -146,15 +146,17 @@ addressForm.addEventListener('submit', function(event) {
      -----------------------------------------*/
 
     // shipping country should not be empty
-    if (validator.isEmpty(shipCountry.value)) {
+    if (shipState.value !== 'state' && shipState.value !== "non-us") {
+        shipCountry.value = "USA";
+    } else if (validator.isEmpty(shipCountry.value)) {
         shipCountry.removeAttribute('placeholder');
         error[6].innerHTML = "Oops! Please enter a shipping country";
         error[6].className = "error active";
         shipCountry.parentNode.classList.add("invalid");
         // shipping country should be alphanumeric and not contain number chars
-    } else if (!validator.isAlphanumeric(shipCountry.value) || validator.contains(shipCountry, ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])) {
+    } else if (!validator.isAlphanumeric(shipCountry.value)) {
         shipCountry.removeAttribute('placeholder');
-        error[6].innerHTML = "Um, I can't think of a country that is spelled like that.";
+        error[6].innerHTML = "Oops! Make sure the country name is correct.";
         error[6].className = "error active";
         shipCountry.parentNode.classList.add("invalid");
     } else {
@@ -267,13 +269,15 @@ addressForm.addEventListener('submit', function(event) {
      -----------------------------------------*/
 
     // billing country should not be empty
-    if (validator.isEmpty(billCountry.value)) {
+    if (billState.value !== 'state' && billState.value !== "non-us") {
+        billCountry.value = "USA";
+    } else if (validator.isEmpty(billCountry.value)) {
         error[13].innerHTML = "Oops! Please enter a billing country";
         error[13].className = "error active";
         billCountry.parentNode.classList.add("invalid");
         // billing country should be alphanumeric and not contain number chars
     } else if (!validator.isAlphanumeric(billCountry.value) || validator.contains(billCountry, ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])) {
-        error[13].innerHTML = "Um, I can't think of a country that is spelled like that.";
+        error[13].innerHTML = "Oops! Make sure the country name is correct";
         error[13].className = "error active";
         billCountry.parentNode.classList.add("invalid");
     } else {
@@ -322,10 +326,116 @@ sameAs.addEventListener('change', function(event) {
 });
 
 
-
-
 ///////////////////////////////////////////////////////////////////////
 /// ******* EVENT LISTENERS FOR REMOVING ERRORS ON INPUT ******** /////
 ///////////////////////////////////////////////////////////////////////
 
+// event listeners for shipping section
+shipFirstName.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[0].innerHTML !== "") {
+        error[0].innerHTML = "";
+        error[0].className = "error";
+        shipFirstName.parentNode.classList.remove("invalid");
+    }
+});
 
+shipLastName.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[1].innerHTML !== "") {
+        error[1].innerHTML = "";
+        error[1].className = "error";
+        shipLastName.parentNode.classList.remove("invalid");
+    }
+});
+
+shipAddress.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[2].innerHTML !== "") {
+        error[2].innerHTML = "";
+        error[2].className = "error";
+        shipAddress.parentNode.classList.remove("invalid");
+    }
+});
+
+shipCity.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[4].innerHTML !== "") {
+        error[4].innerHTML = "";
+        error[4].className = "error";
+        shipCity.parentNode.classList.remove("invalid");
+    }
+});
+
+shipState.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[5].innerHTML !== "") {
+        error[5].innerHTML = "";
+        error[5].className = "error";
+        shipState.parentNode.classList.remove("invalid");
+    }
+});
+
+shipCountry.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[6].innerHTML !== "") {
+        error[6].innerHTML = "";
+        error[6].className = "error";
+        shipCountry.parentNode.classList.remove("invalid");
+    }
+});
+
+// event listeners for billing section
+billFirstName.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[7].innerHTML !== "") {
+        error[7].innerHTML = "";
+        error[7].className = "error";
+        billFirstName.parentNode.classList.remove("invalid");
+    }
+});
+
+billLastName.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[8].innerHTML !== "") {
+        error[8].innerHTML = "";
+        error[8].className = "error";
+        billLastName.parentNode.classList.remove("invalid");
+    }
+});
+
+billAddress.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[9].innerHTML !== "") {
+        error[9].innerHTML = "";
+        error[9].className = "error";
+        billAddress.parentNode.classList.remove("invalid");
+    }
+});
+
+billCity.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[11].innerHTML !== "") {
+        error[11].innerHTML = "";
+        error[11].className = "error";
+        billCity.parentNode.classList.remove("invalid");
+    }
+});
+
+billState.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[12].innerHTML !== "") {
+        error[12].innerHTML = "";
+        error[12].className = "error";
+        billState.parentNode.classList.remove("invalid");
+    }
+});
+
+billCountry.addEventListener('input', function(event) {
+    // check for and reset error on input
+    if (error[13].innerHTML !== "") {
+        error[13].innerHTML = "";
+        error[13].className = "error";
+        billCountry.parentNode.classList.remove("invalid");
+    }
+});
