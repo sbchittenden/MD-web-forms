@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="question.css">
   <link rel="stylesheet" href="../../MD-Intro-to-CSS-website/back.css">
-
+  <script src="../js/validator.js" type="text/javascript"></script>
 </head>
 <body>
 <!-- link back to showcase website -->
@@ -17,13 +17,13 @@
   </div>
 <!-- begin form -->
   <div class="form-wrap">
-    <form action="" method="post" id="search_form">
+    <form action="" method="post" id="question_form">
       <div class="input-wrap">
       <i class="fa fa-space-shuttle fa-4x fa-rotate-270" aria-hidden="true" id="spaceship"></i><h1>If you could only have one spaceship for the rest of your life, which would it be?</h1>
       <div class="first-input">
         <ul class="no-bullet">
           <li>
-            <input type="radio" value="Millennium_Falcon" name="spaceships">
+            <input type="radio" value="Millennium_Falcon" name="spaceships" checked>
             <label for="Millennium_Falcon">The Millennium Falcon</label>
           </li>
           <li>
@@ -48,6 +48,7 @@
             
           </li>
           <textarea name="other" id="other"></textarea>
+          <span class="error"></span>
         </ul>
       </div>
 
@@ -61,5 +62,6 @@
       </div>
     </form>
   </div>
+  <script src="questionnaire.js" type="text/javascript"></script>
 </body>
 </html>
