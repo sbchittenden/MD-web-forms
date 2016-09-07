@@ -95,6 +95,7 @@ textarea {
 	width: 45%;
 	float: right;
 	padding: 1%;
+	background: repeat url(worn_dots.png);
 }
 
 .range-numbers {
@@ -190,7 +191,9 @@ orange explosion
 color-window background color
  --------------------------------------*/
 
-
+#color-window {
+	background-color: rgba(45,45,105,1);
+}
 
 
 /* ------------------------------------
