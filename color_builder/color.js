@@ -38,5 +38,5 @@ alpha.addEventListener('change', function(event) {
 colorBuildForm.addEventListener('submit', function(event) {
 	event.preventDefault();
 
-	window.alert('Your rgba() color is: ' + 'rgba(' + red.value + ',' + green.value + ',' + blue.value + ',' + alpha.value + ')');
+	window.alert('Your color is: ' + 'rgba(' + red.value + ',' + green.value + ',' + blue.value + ',' + alpha.value + ')');
 });
