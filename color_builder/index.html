@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="color.css">
   <link rel="stylesheet" href="../../MD-Intro-to-CSS-website/back.css">
-
+<!-- link to validator.js -->
+  <script type="text/javascript" src="../js/validator.js" ></script>
 </head>
 <body>
 <!-- link back to showcase website -->
@@ -53,10 +54,10 @@
       </div>
       <div>
         <label for="alpha">Alpha</label>
-        <input id="alpha" name="alpha" type="range" min="0" max="255" step="5">
+        <input id="alpha" name="alpha" type="range" min="0" max="1" step="0.1">
         <div class="range-numbers">
           <div class="fl-lft width-50">0</div>
-          <div class="fl-rt width-50 text-right">255</div>
+          <div class="fl-rt width-50 text-right">1</div>
         </div>
       </div>
       </div>
@@ -64,12 +65,14 @@
         <textarea name="color-window" id="color-window" rows="12" cols="10"></textarea>
       </div>
       <div>
-        <button class="button" type="submit">Copy color!</button>
+        <button class="button" type="submit">Get my color!</button>
       </div>  
     
     </div>
     </form>
     
   </div>
+  <!-- link to credit.js -->
+    <script type="text/javascript" src="color.js" ></script>
 </body>
 </html>

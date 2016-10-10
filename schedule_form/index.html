@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="schedule.css">
   <link rel="stylesheet" href="../../MD-Intro-to-CSS-website/back.css">
+  <script type="text/javascript" src="../js/validator.js"></script>
+
 </head>
 <body>
 <!-- link back to showcase website -->
@@ -17,29 +19,32 @@
 <!-- begin form -->
 <div class="form-wrap">
     <h1>When should we do the thing?</h1>
-    <form action="" method="post" id="search_form">
+    <form action="" method="post" id="schedule_form">
       <div class="input-wrap">
       
       <div class="input-group">
         <label for="date">Date:</label>
-        <input type="date" name="date" id="date" placeholder="mm/dd/yyyy">
-      </div>
+        <input type="text" name="date" id="date" placeholder="MM-DD-YYYY">
+        <span class="error"></span>
+      </div> 
 
       <div class="input-group">
         <label for="time">Time:</label>
         <input type="time" name="time" id="time">
+        <span class="error"></span>
       </div>
 
       <div class="input-group">
         <label for="timezone">Timezone:</label>
         <select name="timezone" id="timezone">
+          <option value="timezone" selected>Choose your timezone</option>
           <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
           <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
           <option value="-10:00">(GMT -10:00) Hawaii</option>
           <option value="-09:50">(GMT -9:30) Taiohae</option>
           <option value="-09:00">(GMT -9:00) Alaska</option>
           <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
-          <option value="-07:00" selected="selected">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+          <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
           <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
           <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
           <option value="-04:50">(GMT -4:30) Caracas</option>
@@ -74,21 +79,24 @@
           <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
           <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
         </select>
+        <span class="error"></span>
       </div>
       
       <div class="input-group">
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
+        <input type="text" name="email" id="email" placeholder="name@domain.com">
+        <span class="error"></span>
       </div>
 
       <div class="input-group">
         <label for="telephone">Phone:</label>
         <input type="tel" name="telephone" id="telephone" placeholder="xxx-xxx-xxxx">
+        <span class="error"></span>
       </div>
 
       <div class="input-group">
         <label for="message">Message:</label>
-        <textarea name="message" id="message" cols="30" rows="30"></textarea>
+        <textarea name="message" id="message" cols="30" rows="30" placeholder="add an optional message"></textarea>
       </div>
 
       <div>
@@ -98,6 +106,6 @@
       </div>
     </form>
   </div>
-    
+    <script type="text/javascript" src="schedule.js"></script>
 </body>
 </html>
