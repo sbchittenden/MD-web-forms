@@ -717,6 +717,30 @@
         return alpha;
     };
 
+    //////////////////////////////
+    // .isAlpha(input)         //
+    ////////////////////////////
+
+    validator.isAlpha = function(input) {
+        var aN = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+            'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+            'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F',
+            'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
+            'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+        var inputArr = input.split('');
+
+        var alpha = true;
+
+        inputArr.forEach(function(element) {
+            if (aN.indexOf(element) === -1) {
+                alpha = false;
+            }
+        });
+
+        return alpha;
+    };
+
     //////////////////////////
     // .isCreditCard(input) //
     //////////////////////////
@@ -881,7 +905,7 @@
     ///////////////////////
 
     validator.isTrimmed = function(input) {
-        
+
         // check for leading or trailing whitespace
         if (input.charAt(0) === ' ' || input.charAt(input.length - 1) === ' ') {
             return false;
@@ -898,7 +922,7 @@
         return true;
     };
 
-// add the validator object into the global window object for easier access 
-window.validator = validator;
+    // add the validator object into the global window object for easier access 
+    window.validator = validator;
 
 })(window);

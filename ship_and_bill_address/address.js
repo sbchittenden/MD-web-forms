@@ -123,7 +123,7 @@ addressForm.addEventListener('submit', function(event) {
         error[4].className = "error active";
         shipCity.parentNode.classList.add("invalid");
         // shipping city should be alphanumeric with no number chars
-    } else if (validator.contains(shipCity.value, ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']) || !validator.isAlphanumeric(shipCity.value)) {
+    } else if (!validator.isAlpha(shipCity.value)) {
         shipCity.removeAttribute('placeholder');
         error[4].innerHTML = "Oops! Make sure the city name has no numbers in it.";
         error[4].className = "error active";
@@ -160,7 +160,7 @@ addressForm.addEventListener('submit', function(event) {
         error[6].className = "error active";
         shipCountry.parentNode.classList.add("invalid");
         // shipping country should be alphanumeric and not contain number chars
-    } else if (validator.contains(shipCountry.value, ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']) || !validator.isAlphanumeric(shipCountry.value)) {
+    } else if (!validator.isAlpha(shipCountry.value)) {
         shipCountry.removeAttribute('placeholder');
         error[6].innerHTML = "Oops! Make sure the country name is correct.";
         error[6].className = "error active";
@@ -252,7 +252,7 @@ addressForm.addEventListener('submit', function(event) {
         error[11].className = "error active";
         billCity.parentNode.classList.add("invalid");
         // billing city should be alphanumeric and not contain number chars
-    } else if (validator.contains(billCity.value, ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']) || !validator.isAlphanumeric(billCity.value)) {
+    } else if (!validator.isAlpha(billCity.value)) {
         billCity.removeAttribute('placeholder');
         error[11].innerHTML = "Oops! Make sure the city name has no numbers in it.";
         error[11].className = "error active";
@@ -288,7 +288,7 @@ addressForm.addEventListener('submit', function(event) {
         error[13].className = "error active";
         billCountry.parentNode.classList.add("invalid");
         // billing country should be alphanumeric and not contain number chars
-    } else if (validator.contains(billCountry.value, ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']) || !validator.isAlphanumeric(billCountry.value)) {
+    } else if (!validator.isAlpha(billCountry.value)) {
         error[13].innerHTML = "Oops! Make sure the country name is correct";
         error[13].className = "error active";
         billCountry.parentNode.classList.add("invalid");
