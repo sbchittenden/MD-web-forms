@@ -122,6 +122,12 @@ addressForm.addEventListener('submit', function(event) {
         error[4].innerHTML = "Please don't include any extra whitespace.";
         error[4].className = "error active";
         shipCity.parentNode.classList.add("invalid");
+        // shipping city should be alphanumeric with no number chars
+    } else if (!validator.isAlphanumeric(shipCity.value) || validator.contains(shipCity, ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])) {
+        shipCity.removeAttribute('placeholder');
+        error[4].innerHTML = "Oops! Make sure the city name has no numbers in it.";
+        error[4].className = "error active";
+        shipCity.parentNode.classList.add("invalid");
     } else {
         shipCity.parentNode.classList.remove("invalid");
         addressForm.className = "valid";
@@ -154,7 +160,7 @@ addressForm.addEventListener('submit', function(event) {
         error[6].className = "error active";
         shipCountry.parentNode.classList.add("invalid");
         // shipping country should be alphanumeric and not contain number chars
-    } else if (!validator.isAlphanumeric(shipCountry.value)) {
+    } else if (!validator.isAlphanumeric(shipCountry.value) || validator.contains(shipCountry, ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])) {
         shipCountry.removeAttribute('placeholder');
         error[6].innerHTML = "Oops! Make sure the country name is correct.";
         error[6].className = "error active";
@@ -243,6 +249,12 @@ addressForm.addEventListener('submit', function(event) {
         // billing city should not have extra whitespace
     } else if (!validator.isTrimmed(billCity.value)) {
         error[11].innerHTML = "Please don't include any extra whitespace.";
+        error[11].className = "error active";
+        billCity.parentNode.classList.add("invalid");
+        // billing city should be alphanumeric and not contain number chars
+    } else if (!validator.isAlphanumeric(billCity.value) || validator.contains(billCity, ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])) {
+        billCity.removeAttribute('placeholder');
+        error[11].innerHTML = "Oops! Make sure the city name has no numbers in it.";
         error[11].className = "error active";
         billCity.parentNode.classList.add("invalid");
     } else {
