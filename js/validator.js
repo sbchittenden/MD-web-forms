@@ -859,12 +859,16 @@
         }
 
         var hslValues = [];
-
-        // convert number strings to numbers and push to hslValues array
-        hslArr.forEach(function(value) {
-            hslValues.push(parseFloat(value));
+  
+        hslArr.forEach(function(value){
+          if (value.indexOf('%') === -1) {
+            hslValues.push(parseFloat(value))
+          }
+          else if (value.indexOf('%') !== -1) {
+            hslValues.push(parseFloat(value)*0.01);
+          }
         });
-
+  
         // check if Hue value is within range
         if (!(hslValues[0] >= 0 && hslValues[0] <= 360)) {
             isValidHSL = false;
